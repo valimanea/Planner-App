@@ -49,7 +49,7 @@ for (var i = 0; i < timeIndex.length; i++) {
   } else if (timeCompare > [i + 9]) {
     textEl.addClass("past");
   } else {
-    text.addClass("present");
+    textEl.addClass("present");
   }
 
   var saveEl = $("<button>")
