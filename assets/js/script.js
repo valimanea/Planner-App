@@ -49,7 +49,7 @@ for (var i = 0; i < timeIndex.length; i++) {
   } else if (timeCompare > [i + 9]) {
     textEl.addClass("past");
   } else {
-    text.addClass("present");
+    textEl.addClass("present");
   }
 
   var saveEl = $("<button>")
@@ -62,10 +62,6 @@ for (var i = 0; i < timeIndex.length; i++) {
   listEl.append(saveEl);
   timeBlocksEl.append(listEl);
 }
-
-$("button").button({
-    icon: "ui-icon-circle-arrow-e"
-});
 
 $(".saveBtn").on("click", function () {
   var Id = $(this).attr("data-letter");
