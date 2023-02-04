@@ -63,10 +63,6 @@ for (var i = 0; i < timeIndex.length; i++) {
   timeBlocksEl.append(listEl);
 }
 
-$("button").button({
-    icon: "ui-icon-circle-arrow-e"
-});
-
 $(".saveBtn").on("click", function () {
   var Id = $(this).attr("data-letter");
   var textId = "#" + Id;
